@@ -9,7 +9,7 @@ Learning a new programming language is hard. Learning a new type of programming 
 The purpose of this site is provide an understanding of functional programming through Haskell.
 
 ## *Ok, but what is a functional programming language*
-The most familar type of programming most people are familar with is that of imperative programming, where
+The most familar type of programming most people are accustomed with is that of imperative programming, where
 the computer follows a sequence of imperative statements that alter the state of the program during its
 runtime. Functional programming, on the other hand, is based on function construnction, composition, and 
 application, usually in a recursive manner.
