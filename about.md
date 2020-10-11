@@ -5,7 +5,7 @@
 
 
 ## *What is the purpose of this site?*
-Learning a new programming language is hard. Learning a new type of programming languages is even harder. 
+Learning a new programming language is hard. Learning a new way of programming is even harder. 
 The purpose of this site is provide an understanding of functional programming through Haskell.
 
 ## *Ok, but what is a functional programming language?*
