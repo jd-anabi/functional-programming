@@ -33,7 +33,7 @@ sum_n n = n + sum (n-1)
 Now it is ok if you don't completely understand the syntax right now. But what this basically says is that we a function sum, with an
 argument N, that we have defined in a recursive manner. Mathematically, it looks something like this:  
 
-sum(0) = 0
+sum(0) = 0  
 sum(n) = n + sum (n-1)  
 
 If you are still confused, it's ok, we will show a simple example for n = 5 that will hopefully make it more clear.  
