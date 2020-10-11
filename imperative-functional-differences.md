@@ -41,4 +41,4 @@ If you are still confused, it's ok, we will show a simple example for n = 5 that
 sum(5) = 5 + sum(4) = 5 + 4 + sum(3) = 5 + 4 + 3 + sum(2) = 5 + 4 + 3 + 2 + sum(1) = 5 + 4 + 3 + 2 + 1 + sum(0) = 5 + 4 + 3 + 2 + 1 + 0 = 15  
 
 The jist of this is that the programming is not following a set of sequential statements. Rather, the program is determined by how we define, 
-compose, and apply our functions.
+compose, and apply our functions. However, the way we define our functions in Haskell is through [recursion](https://jd-anabi.github.io/functional-programming/recursion).
