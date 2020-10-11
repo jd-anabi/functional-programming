@@ -10,11 +10,11 @@ follows, which alter the state of the program.
 For example, say you wanted to computer the sum of the integers between
 1 and N, inclusively (i.e. 1 + 2 + 3 + ... + N). We could write a simple program that does this for us. In Python, it would
 look something like this:
-'''python
+```python
 sum = 0
 for x in range(1, N+1):
     sum = sum + x
-'''
+```
 As we can see, the computer is just following a specified amount of sequential steps. It starts at *sum = 0*. Then it moves
 to the next line, where it sets *x = 0*. Then it moves to the next line where it computes *sum = 0 + 1* before setting *x = 1*
 and doing the process over again. Each line acts like a sequential step, in which the state of the program is altered each time.  
@@ -25,11 +25,11 @@ This way of programming is perfectly valid. However, there is another type of pr
 Functional programming, on the other hand, is based on function construnction, composition, and application. That is, our program is
 designed around functions, and how we compose them and apply them. For example, in Haskell, if we wanted to compute the same sum as 
 mentioned before, we would write:
-'''haskell
+```haskell
 sum :: Int -> Int
 sum 0 = 0
 sum N = N + sum(N-1)
-'''
+```
 Now it is ok if you don't completely understand the syntax right now. But what this basically says is that we a function sum, with an
 argument N, that we have defined in a recursive manner. Mathematically, it looks something like this:
 sum(0) = 0
