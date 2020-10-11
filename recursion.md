@@ -1,6 +1,6 @@
 [Back to main](https://jd-anabi.github.io/functional-programming/)  
 
-From the last tutorial, you might have noticed that when we defining our function for sum, we used recursion.
+From the last tutorial, you might have noticed that when we were defining our function for sum, we used recursion.
 Indeed, any non-trivial function in Haskell is recursive by nature since Haskell does not provide any
 mechanism for looping, like for-loops or while-loops that are present in other languages. This, then, 
 brings us to our next topic: recursion.  
