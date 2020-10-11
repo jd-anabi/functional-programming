@@ -8,11 +8,11 @@ If I ask you what programming is, you might say that it is the process of design
 follows, which alter the state of the program.  
 
 For example, say you wanted to computer the sum of the integers between
-1 and N, inclusively (i.e. 1 + 2 + 3 + ... + N). We could write a simple program that does this for us. In Python, it would
+1 and n, inclusively (i.e. 1 + 2 + 3 + ... + n). We could write a simple program that does this for us. In Python, it would
 look something like this:
 ```python
 sum = 0
-for x in range(1, N+1):
+for x in range(1, n+1):
     sum = sum + x
 ```
 As we can see, the computer is just following a specified amount of sequential steps. It starts at *sum = 0*. Then it moves
@@ -26,17 +26,17 @@ Functional programming, on the other hand, is based on function construnction, c
 designed around functions, and how we compose them and apply them. For example, in Haskell, if we wanted to compute the same sum as 
 mentioned before, we would write:
 ```haskell
-sum :: Int -> Int
-sum 0 = 0
-sum N = N + sum(N-1)
+sum_n :: Int -> Int
+sum_n 0 = 0
+sum_n n = n + sum (n-1)
 ```
 Now it is ok if you don't completely understand the syntax right now. But what this basically says is that we a function sum, with an
 argument N, that we have defined in a recursive manner. Mathematically, it looks something like this:  
 
 sum(0) = 0
-sum(N) = N + sum(N-1)  
+sum(n) = n + sum (n-1)  
 
-If you are still confused, it's ok, we will show a simple example for N = 5 that will hopefully make it more clear.  
+If you are still confused, it's ok, we will show a simple example for n = 5 that will hopefully make it more clear.  
 
 sum(5) = 5 + sum(4) = 5 + 4 + sum(3) = 5 + 4 + 3 + sum(2) = 5 + 4 + 3 + 2 + sum(1) = 5 + 4 + 3 + 2 + 1 + sum(0) = 5 + 4 + 3 + 2 + 1 + 0 = 15  
 
