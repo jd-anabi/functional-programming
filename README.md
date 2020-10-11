@@ -6,5 +6,6 @@
 ### Fundamentals of functional programming
 * [Imperative vs. Functional Programming](https://jd-anabi.github.io/functional-programming/imperative-functional-differences)
 * [What is recursion?](https://jd-anabi.github.io/functional-programming/recursion)  
+
 ### Haskell for beginners
 * [Basics of Haskell](https://jd-anabi.github.io/functional-programming/haskell-fundamentals)
