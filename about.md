@@ -1,7 +1,3 @@
-layout: page
-title: "About"
-permalink: https://jd-anabi.github.io/functional-programming/about
-
 # **FAQ**
 
 
