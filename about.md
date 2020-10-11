@@ -1,3 +1,5 @@
+[Back to main](https://jd-anabi.github.io/functional-programming/)
+
 # **FAQ**
 
 ## *What is the purpose of this site?*
