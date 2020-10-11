@@ -5,7 +5,7 @@ Indeed, any non-trivial function in Haskell is recursive by nature since Haskell
 mechanism for looping, like for-loops or while-loops that are present in other languages. This, then, 
 brings us to our next topic: recursion.  
 
-# **What is recursion**
+# **What is recursion?**
 Recursion, simply put, is defining something in terms of itself. Thus, a recursive function is a function
 that is defined in terms of itself. A very popular example that helps in demonstrating this is through 
 the use of the factorial function. Mathematically, one can define the factorial of n as a recurrence relation:  
