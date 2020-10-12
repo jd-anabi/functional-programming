@@ -12,4 +12,4 @@
 * [Lists in Haskell](https://jd-anabi.github.io/functional-programming/lists)
 
 ### Mathematics
-* [Reccurrence relations](https://jd-anabi.github.io/functional-programming/reccurence-relations)
+* [Recurrence relations](https://jd-anabi.github.io/functional-programming/recurence-relations)
