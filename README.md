@@ -9,3 +9,7 @@
 
 ### Haskell for beginners
 * [Basics of Haskell](https://jd-anabi.github.io/functional-programming/haskell-fundamentals)
+* [Lists in Haskell](https://jd-anabi.github.io/functional-programming/lists)
+
+### Mathematics
+* [Reccurrence relations](https://jd-anabi.github.io/functional-programming/reccurence-relations)
