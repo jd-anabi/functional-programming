@@ -1,6 +1,6 @@
 [Back to main](https://jd-anabi.github.io/functional-programming/)  
 
-# Reccurence Relations
+# Recurrence Relations
 To understand functions in Haskell, it is necessary to understand recurrence relations. 
 Recurence relations are functions that are defined in terms of themselves. To understand this, 
 we will do multiple examples.
