@@ -26,12 +26,12 @@ fib(0) = 0
 fib(1) = 1  
 fib(n) = fib(n-1) + fib(n-2)  
 This can be easily converted into Haskell like:  
-'''Haskell
+```Haskell
 fib :: Int -> Int
 fib 0 = 0
 fib 1 = 1
 fib n = (fib n-1) + (fib n-2)
-'''
+```
 As we can see, this is a clear corrollary between the mathematical reccurence relation and the recursive Haskell function.  
 If you are still not comfortable with this, see the [reccurence relations](https://jd-anabi.github.io/functional-programming/reccurrence-relations) 
 section for more help. If you are comfortable with these recurrence relations, we are ready  to work with [lists in Haskell](https://jd-anabi.github.io/functional-programming/).
