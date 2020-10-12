@@ -1,8 +1,8 @@
 [Back to main](https://jd-anabi.github.io/functional-programming/)  
 
 # Reccurence Relations
-To understand functions in Haskell, it is necessary to understand reccurrence relations. 
-Reccurence relations are functions that are defined in terms of themselves. To understand this, 
+To understand functions in Haskell, it is necessary to understand recurrence relations. 
+Recurence relations are functions that are defined in terms of themselves. To understand this, 
 we will do multiple examples.
 
 ## Examples
@@ -19,4 +19,4 @@ F(N) = F(N-1) + F(N-2)
 ### Logistic Map (given a constant r and initial x<sub>0</sub>)
 x<sub>n+1</sub> = rx<sub>n</sub>(1 - x<sub>n</sub>)  
 
-Hopefully now you are more comfortable with recursion and reccurrence relations.
+Hopefully now you are more comfortable with recursion and recurrence relations.
