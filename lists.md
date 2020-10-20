@@ -60,4 +60,7 @@ end_append [1,2,3] 4
 = 1:(2:(3:(4:[])))  
 = [1,2,3,4]  
 
-These are just a couple of examples that we could have down. Check the Haskell Exercises section for more examples.
+These are just a couple of examples that we could have down. Check the **Haskell Exercises** section for more examples. I reccommend
+trying to do all of the exercises in the first two sections without looking at the solutions. If you are truly stuck, or just want
+to compare your solutions, you can take a look at the **Haskell Exercise Solutions** section. When you are ready, we can begin learning 
+[guards](https://jd-anabi.github.io/functional-programming/guards).
