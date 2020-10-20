@@ -19,6 +19,6 @@
 * [Basic Recursion Exercises](https://jd-anabi.github.io/functional-programming/basic-recursion-exercises)
 * [Basic List Exercises](https://jd-anabi.github.io/functional-programming/basic-list-exercises)
 
-## Haskell Solutions
+### Haskell Exercise Solutions
 * [Basic Recursion Solutions](https://jd-anabi.github.io/functional-programming/basic-recursion-solutions)
 * [Basic List Solutions](https://jd-anabi.github.io/functional-programming/basic-list-solutions)
