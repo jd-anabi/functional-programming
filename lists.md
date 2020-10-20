@@ -39,7 +39,12 @@ len [] = 0
 len x:xs = 1 + (len xs)
 ```
 For example, suppose we have the list [1,2,3]. Then,  
-len [1,2,3] = 1 + (len [2,3]) = 1 + 2 + (len [3]) = 1 + 1 + 1 + (len []) = 1 + 1 + 1 + 0 = 3  
+len [1,2,3]  
+= 1 + (len [2,3])  
+= 1 + 2 + (len [3])  
+= 1 + 1 + 1 + (len [])  
+= 1 + 1 + 1 + 0  
+= 3  
 ### End Append
 We can append an element y to the end of a list x:xs by doing the following:
 ```Haskell
@@ -47,7 +52,12 @@ end_append :: List -> Int -> List
 end_append [] y = y:[]
 end_append (x:xs) y = x : (end_append xs y)
 ```
-For example, let's take the list [1,2,3] and append 4 to the end of it:
-end_append [1,2,3] 4 = 1:(end_append [2,3] 4) = 1:(2:(end_append [3] 4)) = 1:(2:(3:(end_append [] 4))) = 1:(2:(3:(4:[]))) = [1,2,3,4]  
+For example, let's take the list [1,2,3] and append 4 to the end of it:  
+end_append [1,2,3] 4  
+= 1:(end_append [2,3] 4)  
+= 1:(2:(end_append [3] 4))  
+= 1:(2:(3:(end_append [] 4)))  
+= 1:(2:(3:(4:[])))  
+= [1,2,3,4]  
 
 These are just a couple of examples that we could have down. Check the Haskell Exercises section for more examples.
