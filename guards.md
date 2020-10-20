@@ -14,14 +14,14 @@ if-then-else statements. Let's see how they work.
 
 ## If-then-else
 Basically, a Haskell if-then-else statement is constructed using the following format:
-```Haskell
+```haskell
 if --condition
     then --perform A
     else --perform B
 ```
 where A and B are arbitrary operations. To get a more concrete understanding of this, let's 
 try to construct our aformentioned piecewise function in Haskell.
-```Haskell
+```haskell
 f :: Int -> Int
 f x = 
     if abs (x) > 1
@@ -34,7 +34,7 @@ of doing the same thing; this is what is known as guards.
 
 ## Guards
 The basic structure of guards is constructed as follows:
-```Haskell
+```haskell
 f x
     | condition 1 = A1
     | condition 2 = A2
@@ -47,7 +47,7 @@ where Ap is some arbitrary operation &forall; p &isin; {1, 2, ... n}.
 Looking at this structure, it seems like guards allows more flexibility when compared to our aformentioned if-then-else 
 statement. And that is true. Guards can do the same things as if-then-else statements, but more elegantly (in my opinion).  
 To get a concrete understanding of guards, let's construct our piecewise function using them.
-```Haskell
+```haskell
 f :: Int -> Int
 f x
     | abs(x) > 1 = x*x
