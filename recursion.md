@@ -12,14 +12,14 @@ the use of the factorial function. Mathematically, one can define the factorial 
 
 n! = n * (n-1)!  
 For example:  
-5! = 
-5 * 4! = 
-5 * 4 * 3! = 
-5 * 4 * 3 * 2! = 
-5 * 4 * 3 * 2 * 1! = 
-5 * 4 * 3 * 2 * 1 * 0! = 
-5 * 4 * 3 * 2 * 1 * 1 = 
-120  
+5!  
+= 5 * 4!  
+= 5 * 4 * 3!  
+= 5 * 4 * 3 * 2!   
+= 5 * 4 * 3 * 2 * 1!   
+= 5 * 4 * 3 * 2 * 1 * 0!  
+= 5 * 4 * 3 * 2 * 1 * 1  
+= 120  
 
 In Python, we can define this as the function:  
 ```python
@@ -29,14 +29,14 @@ def factorial(n):
     return n * factorial(n-1)
 ```  
 For n = 5, this would be:  
-fact(5) = 
-5 * fact(4) = 
-5 * 4 * fact(3) = 
-5 * 4 * 3 * fact(2) = 
-5 * 4 * 3 * 2 * fact(1) = 
-5 * 4 * 3 * 2 * 1 * fact(0) = 
-5 * 4 * 3 * 2 * 1 * 1 = 
-120  
+fact(5)  
+= 5 * fact(4)   
+= 5 * 4 * fact(3)  
+= 5 * 4 * 3 * fact(2)   
+= 5 * 4 * 3 * 2 * fact(1)   
+= 5 * 4 * 3 * 2 * 1 * fact(0)   
+= 5 * 4 * 3 * 2 * 1 * 1   
+= 120  
 
 This agrees with our previous mathematical recurrence relation.  
 
