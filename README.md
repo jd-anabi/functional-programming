@@ -12,6 +12,7 @@
 * [Lists in Haskell](https://jd-anabi.github.io/functional-programming/lists)
 * [Guards](https://jd-anabi.github.io/functional-programming/guards)
 
+## Supplementary
 ### Mathematics
 * [Recurrence relations](https://jd-anabi.github.io/functional-programming/recurrence-relations)
 
