@@ -8,8 +8,17 @@
 * [What is recursion?](https://jd-anabi.github.io/functional-programming/recursion)  
 
 ### Haskell for beginners
-* [Basics of Haskell](https://jd-anabi.github.io/functional-programming/haskell-fundamentals)
+* [Function Basics of Haskell](https://jd-anabi.github.io/functional-programming/haskell-fundamentals)
 * [Lists in Haskell](https://jd-anabi.github.io/functional-programming/lists)
+* [Guards](https://jd-anabi.github.io/functional-programming/guards)
 
 ### Mathematics
 * [Recurrence relations](https://jd-anabi.github.io/functional-programming/recurrence-relations)
+
+### Haskell Exercises
+* [Basic Recursion Exercises](https://jd-anabi.github.io/functional-programming/basic-recursion-exercises)
+* [Basic List Exercises](https://jd-anabi.github.io/functional-programming/basic-list-exercises)
+
+## Haskell Solutions
+* [Basic Recursion Solutions](https://jd-anabi.github.io/functional-programming/basic-recursion-solutions)
+* [Basic List Solutions](https://jd-anabi.github.io/functional-programming/basic-list-solutions)
