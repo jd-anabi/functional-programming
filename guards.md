@@ -6,7 +6,5 @@ our mathematical friend, the piecewise function.
 
 ## The Piecewise Function
 In math, you might have encountered what is known as a piecewise function. For example, the 
-following:  
-           { x, if |x| &gt 0  
-&fnof(x) = {  
-           { 0, otherwise  
+following:   
+&fnof(x) = { x if |x| &gt 0, 0 otherwise
