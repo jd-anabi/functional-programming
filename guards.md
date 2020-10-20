@@ -33,3 +33,25 @@ This has the same logic as our piecewise function. However, Haskell does provide
 of doing the same thing; this is what is known as guards.
 
 ## Guards
+The basic structure of guards is constructed as follows:
+```Haskell
+f x
+    | condition 1 = A1
+    | condition 2 = A2
+    .
+    .
+    .
+    | condition n = An
+```
+where Ap is some arbitrary operation &forall; p &isin; {1, 2, ... n}.  
+Looking at this structure, it seems like guards allows more flexibility when compared to our aformentioned if-then-else 
+statement. And that is true. Guards can do the same things as if-then-else statements, but more elegantly (in my opinion).  
+To get a concrete understanding of guards, let's construct our piecewise function using them.
+```Haskell
+f :: Int -> Int
+f x
+    | abs(x) > 1 = x*x
+    | otherwise = 0
+```
+Now, this looks similar to our if-then-else construction from before. But you might have notice the **otherwise** statment. 
+The otherwise statement is simply always true, and it serves a similar purpose as the otherwise in our piecewise function.
