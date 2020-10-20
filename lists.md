@@ -6,11 +6,11 @@ Now that we know how functions work in Haskell, let's try some applications with
 Before we make functions with lists, we should learn how they work in Haskell.  
 ### Constructing Lists
 A list can be constructed in the following manner:
-```Haskell
+```haskell
 []
 ```
 is the empty list in Haskell.
-```Haskell
+```haskell
 x:xs
 ```
 is a list with x as its first element, which continues with xs. An example would be:  
@@ -23,7 +23,7 @@ X<sub>x<sub>0</sub>,x<sub>n</sub></sub> is a list X starting with element x<sub>
 running up to element x<sub>n</sub>, A(y<sub>p</sub>, Y) is a function that appends the element y<sub>p</sub> to the front of list Y.  
 ### Deconstructing Lists
 A list can be deconstructured in the following manner:
-```Haskell
+```haskell
 head(x:xs) = x
 tail(x:xs) = xs
 ```
@@ -33,7 +33,7 @@ All of this should give us a solid basis for working with lists.
 Now that we know how to make functions and lists, we can do some pretty neat things.
 ### Length
 We can compute the length of a list by doing the following:
-```Haskell
+```haskell
 len :: List -> Int
 len [] = 0
 len x:xs = 1 + (len xs)
@@ -47,7 +47,7 @@ len [1,2,3]
 = 3  
 ### End Append
 We can append an element y to the end of a list x:xs by doing the following:
-```Haskell
+```haskell
 end_append :: List -> Int -> List
 end_append [] y = y:[]
 end_append (x:xs) y = x : (end_append xs y)
