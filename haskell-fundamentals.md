@@ -5,11 +5,13 @@ please go [here](https://www.haskell.org/platform/) to install it.
 
 # Functions
 One of the most fundamental aspects of Haskell is functions. Learning how to create, compose, and apply functions is essential to working with Haskell. 
-Whenever you are write a function, it will usually follow the basic format:  
-f :: (at1 -> at2 -> ... -> atn) -> rt  
+Whenever you are write a function, it will usually follow the basic format (the ... indicate that this code wouldn't actually run; it is merely for demonstration purposes):  
+```Haskell
+f :: at1 -> at2 -> ... -> atn -> rt  
 f O1 O2 ... On = br  
-f a1 a2 ... an = r  
-where 
+f a1 a2 ... an = r 
+```
+where  
 * f is the name of the function
 * {at1,at2,...,atn} are the types of the arguments
 * rt is the type of the return value
