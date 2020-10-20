@@ -9,7 +9,7 @@ In math, you might have encountered what is known as a piecewise function. For e
 following  
 &fnof;(x) = { x&sup2; if x &gt; 0, 0 otherwise  
 says that **if** x &gt; 0 **then** &fnof;(x) = x&sup2; **else** &fnof;(x) = 0.  
-I highlight the if then and else because Haskell has what are known as  
-if-then-else statements.  
+I highlight the if then and else because Haskell has what are known as 
+if-then-else statements. Let's see how they work.
 
 ## If-then-else
