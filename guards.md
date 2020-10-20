@@ -54,4 +54,10 @@ f x
     | otherwise = 0
 ```
 Now, this looks similar to our if-then-else construction from before. But you might have notice the **otherwise** statment. 
-The otherwise statement is simply always true, and it serves a similar purpose as the otherwise in our piecewise function.
+The otherwise statement is simply always true, and it serves a similar purpose as the otherwise in our piecewise function. 
+Basically, if all the conditions before the otherwise evaluate to false, then the expression for the otherwise statement is
+evaluated and returned.  
+
+Now that we have a basic understanding of constructing more complicated Haskell functions, I suggest taking a look at the 
+Haskell Exercises section to test your understanding. When you feel comfortable enough with everything we have discussed, 
+then we can work on ways to construct [more complicated functions](https://jd-anabi.github.io/functional-programming/functions-wthin-functions).
