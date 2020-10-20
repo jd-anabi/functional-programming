@@ -7,8 +7,8 @@ our mathematical friend, the piecewise function.
 ## The Piecewise Function
 In math, you might have encountered what is known as a piecewise function. For example, the 
 following  
-&fnof;(x) = { x&sup2; if x &gt; 0, 0 otherwise  
-says that **if** x &gt; 0 **then** &fnof;(x) = x&sup2; **else** &fnof;(x) = 0.  
+&fnof;(x) = { x&sup2; if |x| &gt; 1, 0 otherwise  
+says that **if** |x| &gt; 1 **then** &fnof;(x) = x&sup2; **else** &fnof;(x) = 0.  
 I highlight the if then and else because Haskell has what are known as 
 if-then-else statements. Let's see how they work.
 
@@ -16,6 +16,20 @@ if-then-else statements. Let's see how they work.
 Basically, a Haskell if-then-else statement is constructed using the following format:
 ```Haskell
 if --condition
-    then --do A
-    else --do B
+    then --perform A
+    else --perform B
 ```
+where A and B are arbitrary operations. To get a more concrete understanding of this, let's 
+try to construct our aformentioned piecewise function in Haskell.
+```Haskell
+f :: Int -> Int
+f x = 
+    if abs (x) > 1
+        then x*x
+        else 0
+```
+Looking at this code, we can see that **if** |x| &gt; 1, **then** our function returns x&sup2; **else** it returns 0. 
+This has the same logic as our piecewise function. However, Haskell does provide another, perhaps more elegant, way 
+of doing the same thing; this is what is known as guards.
+
+## Guards
