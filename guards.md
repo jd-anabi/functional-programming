@@ -13,3 +13,9 @@ I highlight the if then and else because Haskell has what are known as
 if-then-else statements. Let's see how they work.
 
 ## If-then-else
+Basically, a Haskell if-then-else statement is constructed using the following format:
+```Haskell
+if --condition
+    then --do A
+    else --do B
+```
