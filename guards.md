@@ -8,7 +8,7 @@ our mathematical friend, the piecewise function.
 In math, you might have encountered what is known as a piecewise function. For example, the 
 following  
 &fnof;(x) = { x&sup2; if x &gt; 0, 0 otherwise  
-says that **if** x &gt 0 **then** &fnof;(x) = x&sup2; **else** &fnof;(x) = 0.  
+says that **if** x &gt; 0 **then** &fnof;(x) = x&sup2; **else** &fnof;(x) = 0.  
 I highlight the if then and else because Haskell has what are known as  
 if-then-else statements.  
 
