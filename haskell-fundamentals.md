@@ -6,7 +6,7 @@ please go [here](https://www.haskell.org/platform/) to install it.
 # Functions
 One of the most fundamental aspects of Haskell is functions. Learning how to create, compose, and apply functions is essential to working with Haskell. 
 Whenever you are write a function, it will usually follow the basic format (the ... indicate that this code wouldn't actually run; it is merely for demonstration purposes):  
-```Haskell
+```haskell
 f :: at1 -> at2 -> ... -> atn -> rt  
 f O1 O2 ... On = br  
 f a1 a2 ... an = r 
@@ -28,7 +28,7 @@ fib(0) = 0
 fib(1) = 1  
 fib(n) = fib(n-1) + fib(n-2)  
 This can be easily converted into Haskell like:  
-```Haskell
+```haskell
 fib :: Int -> Int
 fib 0 = 0
 fib 1 = 1
