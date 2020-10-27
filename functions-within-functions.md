@@ -5,9 +5,6 @@ statements and guards. Now, we will go one step further in how we create functio
 functions.
 
 ## Function composition
-Recall from math that if we have two functions  
-&fnof; : X &rarr; Y and g : Y &rarr; Z,  
-then the composistion of these two functions is  
-(&fnof; &#8728; g) : X &rarr; Z.  
-In other words,  
-(&fnof; &#8728; g)(x) = &fnof;(g(x)) &forall; x &isin; X.
+Recall from math that if we have two functions &fnof; : X &rarr; Y and g : Y &rarr; Z, 
+then the composistion of these two functions is (&fnof; &#8728; g) : X &rarr; Z.   
+In other words, (&fnof; &#8728; g)(x) = &fnof;(g(x)) &forall; x &isin; X.
