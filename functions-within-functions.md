@@ -14,11 +14,17 @@ This notion of function composition can be readily extended to Haskell, as we sh
 
 ## Function composition examples
 Before we begin working with this idea of function composition within Haskell, it is important 
-to understand why should care about something like this; for motivation, we shall look at some 
-physical examples of functions being composed together.
+to understand why should care about something like this; for motivation, we shall look at a 
+physical example of functions being composed together.
 
 ### Physics
 #### Lagragian
 In physics, one often works with what is known as the Lagragian. For a simple pendelum 
 of mass m and length L, the Lagragian can be written as:  
-&Lscr; = &Lscr;(&phi;(t), <sup>d</sup>&frasl;<sub>dt</sub>(&phi;(t))) = (&frac12;)mL(<sup>d</sup>&frasl;<sub>dt</sub>(&phi;(t)))<sup>2</sup> - mgL(1 - cos(&theta;))
+&Lscr; = &Lscr;(&phi;(t), <sup>d</sup>&frasl;<sub>dt</sub>(&phi;(t))) = (&frac12;)mL(<sup>d</sup>&frasl;<sub>dt</sub>(&phi;(t)))<sup>2</sup> - mgL(1 - cos(&theta;))  
+Now, you don't need to know what the Lagragian is. But notice how it can be seen as a 
+function composed of of other functions.  
+  
+Now that we hopefully have some motivation for composing functions, let's move onto to working in Haskell.
+
+## Functions within Functions within Functions within ... within Functions within Haskell
