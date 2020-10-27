@@ -7,7 +7,7 @@ our mathematical friend, the piecewise function.
 ## The Piecewise Function
 In math, you might have encountered what is known as a piecewise function. For example, the 
 following  
-<img src="https://github.com/jd-anabi/functional-programming/blob/gh-pages/equations/piecewise.png" width="200">  
+<img src="https://github.com/jd-anabi/functional-programming/blob/gh-pages/equations/piecewise.png" align="center" width="200">  
 says that **if** |x| &gt; 1 **then** &fnof;(x) = x&sup2; **else** &fnof;(x) = 0.  
 I highlight the if then and else because Haskell has what are known as 
 if-then-else statements. Let's see how they work.
