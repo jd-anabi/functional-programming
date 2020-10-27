@@ -6,5 +6,6 @@ functions.
 
 ## Function composition
 Recall from math that if we have two functions &fnof; : X &rarr; Y and g : Y &rarr; Z, 
-then the composistion of these two functions is (&fnof; &#8728; g) : X &rarr; Z.   
+then the composistion of these two functions is (&fnof; &#8728; g) : X &rarr; Z. This 
+reads as a map from elements x &isin; X to elements g(x) &isin; Z.  
 In other words, (&fnof; &#8728; g)(x) = &fnof;(g(x)) &forall; x &isin; X.
