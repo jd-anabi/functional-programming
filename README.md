@@ -11,6 +11,7 @@
 * [Function Basics of Haskell](https://jd-anabi.github.io/functional-programming/haskell-fundamentals)
 * [Lists in Haskell](https://jd-anabi.github.io/functional-programming/lists)
 * [Guards](https://jd-anabi.github.io/functional-programming/guards)
+* [Functions within Functions](https://jd-anabi.github.io/functional-programming/functions-within-functions)
 
 ## Supplementary
 ### Mathematics
