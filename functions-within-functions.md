@@ -21,4 +21,4 @@ physical examples of functions being composed together.
 #### Lagragian
 In physics, one often works with what is known as the Lagragian. For a simple pendelum 
 of mass m and length L, the Lagragian can be written as:  
-&Lscr; = &Lscr;(&phi;(t), &phi;(t) x&#772;)
+&Lscr; = &Lscr;(&phi;(t), <sup>d</sup>&frasl;<sub>dt</sub>&phi;(t))
