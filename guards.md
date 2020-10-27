@@ -60,4 +60,4 @@ evaluated and returned.
 
 Now that we have a basic understanding of constructing more complicated Haskell functions, I suggest taking a look at the 
 Haskell Exercises section to test your understanding. When you feel comfortable enough with everything we have discussed, 
-then we can work on ways to construct [more complicated functions](https://jd-anabi.github.io/functional-programming/functions-wthin-functions).
+then we can work on ways to construct [more complicated functions](https://jd-anabi.github.io/functional-programming/functions-within-functions).
