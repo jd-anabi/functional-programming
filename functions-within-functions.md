@@ -20,8 +20,8 @@ physical example of functions being composed together.
 ### Physics
 #### Lagragian
 In physics, one often works with what is known as the Lagragian. For a simple pendelum 
-of mass m and length L, the Lagragian can be written as:  
-&Lscr; = &Lscr;(&phi;(t), <sup>d</sup>&frasl;<sub>dt</sub>(&phi;(t))) = (&frac12;)mL(<sup>d</sup>&frasl;<sub>dt</sub>(&phi;(t)))<sup>2</sup> - mgL(1 - cos(&theta;))  
+of mass m and length l, the Lagragian can be written as:  
+L = L(&phi;(t), <sup>d</sup>&frasl;<sub>dt</sub>(&phi;(t))) = (&frac12;)ml(<sup>d</sup>&frasl;<sub>dt</sub>(&phi;(t)))<sup>2</sup> - mgl(1 - cos(&theta;))  
 Now, you don't need to know what the Lagragian is. But notice how it can be seen as a 
 function composed of of other functions. Hopefully, this motivates us in our desire to 
 translate our mathematical knowledge of function composition to Haskell.
@@ -46,5 +46,29 @@ Mathematically, this doesn't have to always be the case. Notice with our Lagragi
 explicit dependence on &phi; and <sup>d</sup>&frasl;<sub>dt</sub>(&phi;(t)), but not on t. If 
 we were to write this in Haskell, the arument types would look something like this:
 ```haskell
-L :: (Int -> Int) -> (Int -> Int) -> Int
+L :: (Int -> Int) -> (Int -> Int) -> Int -> Int
 ```
+Now that we have a basis for function composition in Haskell, what can we actually do with it? Well, let's 
+take a look at some examples for motivation.
+
+## Haskell function composition examples
+### Returning the odd elements in a list
+```haskell
+-- determines if some number n is even
+is_even :: Int -> Bool
+is_even n = n `rem` 2 == 0
+
+-- returns a list that contains only the even elements of input list
+even_list :: (Int -> Bool) -> [Int] -> [Int]
+even_list f [] = []
+even_list f (x:xs)
+    | f x = x : (even_list f xs)
+    | otherwise = (even_list f xs)
+```
+For example, to determine the even elements of the list [1,2,7,10,15], we would run: 
+```haskell
+even_list is_even [1,2,7,10,15]
+```
+This returns the list [2,10] as expected. 
+ 
+Now that we have a good understanding of function composition, I suggest taking a look at the exercises. Once you are comfortable with everything we have learned so far, we can begin to learn about [modules](https://jd-anabi.github.io/functional-programming/modules).
