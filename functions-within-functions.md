@@ -72,12 +72,12 @@ even_list is_even [1,2,7,10,15]
 This returns the list [2,10] as expected. Let's go through this example step-by-step. 
 ```haskell
 even_list is_even [1,2,7,10,15]
-= even_list is_even [2,7,10,15] # since 1 `rem` 2 =\= 0
-= 2 : (even_list [7,10,15]) # since 2 `rem` 2 = 0
-= 2 : (even_list [10,15]) # since 7 `rem` 2 =\= 0
-= 2 : (10 : (even_list [15])) # since 10 `rem` 2 = 0
-= 2 : (10 : (even_list []))) # since 15 `rem` 2 =\= 0
-= 2 : (10 : ([])) # by our base case
+= even_list is_even [2,7,10,15] -- since 1 `rem` 2 =\= 0
+= 2 : (even_list [7,10,15]) -- since 2 `rem` 2 = 0
+= 2 : (even_list [10,15]) -- since 7 `rem` 2 =\= 0
+= 2 : (10 : (even_list [15])) -- since 10 `rem` 2 = 0
+= 2 : (10 : (even_list []))) -- since 15 `rem` 2 =\= 0
+= 2 : (10 : ([])) -- by our base case
 = [2,10]
 ```
  
