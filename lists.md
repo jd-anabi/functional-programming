@@ -34,7 +34,7 @@ Now that we know how to make functions and lists, we can do some pretty neat thi
 ### Length
 We can compute the length of a list by doing the following:
 ```haskell
-len :: List -> Int
+len :: [a] -> Int
 len [] = 0
 len x:xs = 1 + (len xs)
 ```
@@ -48,7 +48,7 @@ len [1,2,3]
 ### End Append
 We can append an element y to the end of a list x:xs by doing the following:
 ```haskell
-end_append :: List -> Int -> List
+end_append :: [a] -> Int -> List
 end_append [] y = y:[]
 end_append (x:xs) y = x : (end_append xs y)
 ```
