@@ -36,4 +36,4 @@ fib n = (fib n-1) + (fib n-2)
 ```
 As we can see, this is a nice connection between the mathematical reccurence relation and the recursive Haskell function.  
 If you are still not comfortable with this, see the [recurence relations](https://jd-anabi.github.io/functional-programming/recurrence-relations) 
-section for more help. If you are comfortable with these recurrence relations, we are ready  to work with [lists in Haskell](https://jd-anabi.github.io/functional-programming/).
+section for more help. If you are comfortable with these recurrence relations, we are ready  to work with [lists in Haskell](https://jd-anabi.github.io/functional-programming/lists).
