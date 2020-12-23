@@ -6,14 +6,14 @@ in our lambda expressions, then we don't have to deal with alpha-conversion.
 This is useful because it becomes much easier to see how to expressions 
 are logically equivalent. For example, suppose we have two expressions: 
 
-&lambda;x.&lambda;y.&lambda;z.&lambda;w. x w x z w y
+(&lambda;x.&lambda;y.&lambda;z.&lambda;w. x w x z w y)
 
-&lambda;a.&lambda;b.&lambda;c.&lambda;d, a d a c d b
+(&lambda;a.&lambda;b.&lambda;c.&lambda;d, a d a c d b)
 
 Now, it might not be immediately clear, but these two expressions are logically 
 equivalent. In De Bruijn indices, however, both these statements are:
 
-&lambda; &lambda; &lambda; &lambda; 1 4 1 3 4 2
+(&lambda; &lambda; &lambda; &lambda; 1 4 1 3 4 2)
 
 Thus, this notation is very handy for highlighting the logical equivalence of two expressions. 
 It might seem confusing right now, so don't worry. We will start covering the basics right now.
@@ -25,11 +25,11 @@ Now, converting an expression to De Bruijn notation, we need to convert, seperat
 When converting bounded variables, we see how many binders are between that variable and its own binder (including that binder itself). 
 For example, 
 
-&lambda;x.&lambda;y. x y x
+(&lambda;x.&lambda;y. x y x)
 
 becomes
 
-&lambda; &lambda; 2 1 2
+(&lambda; &lambda; 2 1 2)
 
 as the number of binders between x and its own binder is 2 (again, we are also considering x's binder itself). Similary, for y, 
 there is 1 binder. 
