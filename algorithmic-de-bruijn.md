@@ -27,6 +27,7 @@ deBruijn (EApp e1 e2) =
 
 Let's look at an example and see if this algorithm holds up.
 
+```haskell
 deBruijn (((&lambda;x.&lambda;y. x y) p) (&lambda;z. z))
 
 = write (deBruijn (((&lambda;x.&lambda;y. x y) p)) ++ write (deBruijn (&lambda;z. z))
@@ -51,16 +52,19 @@ deBruijn (((&lambda;x.&lambda;y. x y) p) (&lambda;z. z))
 
 = '(\' ++ '\' ++ '2' ++ '1' ++ ')' ++ ')' ++ write (deBruijn (p)) ++ write (deBruijn (&lambda;z. z))
 
-= '\' ++ '\' ++ '2' ++ '1' ++ ')' ++ ')' ++ write (p) ++ write (deBruijn (&lambda;z. z))
+= '(\' ++ '\' ++ '2' ++ '1' ++ ')' ++ ')' ++ write (p) ++ write (deBruijn (&lambda;z. z))
 
-= '\' ++ '\' ++ '2' ++ '1' ++ ')' ++ ')' ++ 'p' ++ write (deBruijn (&lambda;z. z))
+= '(\' ++ '\' ++ '2' ++ '1' ++ ')' ++ ')' ++ 'p' ++ write (deBruijn (&lambda;z. z))
 
-= '\' ++ '\' ++ '2' ++ '1' ++ ')' ++ ')' ++ 'p' ++ write (deBruijn (z))
+= '(\' ++ '\' ++ '2' ++ '1' ++ ')' ++ ')' ++ 'p' ++ '(\' ++ write (z)
 
-= '\' ++ '\' ++ '2' ++ '1' ++ ')' ++ ')' ++ 'p' ++ write (1)
+= '(\' ++ '\' ++ '2' ++ '1' ++ ')' ++ ')' ++ 'p' ++ '(\' ++ write (1)
 
-= '\' ++ '\' ++ '2' ++ '1' ++ ')' ++ ')' ++ 'p' ++ '1'
+= '(\' ++ '\' ++ '2' ++ '1' ++ ')' ++ ')' ++ 'p' ++ '(\' ++ '1'
+
+= '(\' ++ '\' ++ '2' ++ '1' ++ ')' ++ ')' ++ 'p' ++ '(\' ++ '1' ++ ')'
 
 = '(\ \ 2 1) p 1'
-
-Thus, this gives us the correct expression in mixed De Bruijn indices.
+```
+Thus, this gives us the correct expression in mixed De Bruijn indices. However, lambda calculus isn't the only way to represent 
+computation. There is also [combinatory logic](https://jd-anabi.github.io/functional-programming/).
