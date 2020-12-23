@@ -18,11 +18,33 @@ What this means is that a lambda expression can either be a:
 2. An abstraction (&lambda;x.E<sub>1</sub>, where E<sub>1</sub> is also a lambda expression)
 2. An application (E<sub>1</sub> E<sub>2</sub>, where E<sub>1</sub>, E<sub>2</sub> are also lambda expressions)
 
-For example, ((&lambda;x.(&lambda;y. x y)) z) is an expression that is an application between a variable *z* and 
-an abstraction (&lambda;x.(&lambda;y. x y)). We can drop the parentheses if there is no ambiguity in the expression. 
-Thus, we can write the previous lambda expression as (&lambda;x.&lambda;y. x y) z without any abiguity.
+For example, ((((&lambda;x.(&lambda;y. x y)) p) q)) is an expression that is an application between a variables *p* and 
+*q* and an abstraction (&lambda;x.(&lambda;y. x y)). We can drop the parentheses if there is no ambiguity in the expression. 
+Thus, we can write the previous lambda expression as (&lambda;x.&lambda;y. x y) p q without any abiguity.
 
 # Rules
 When working with lambda expressions, there are two computation rules that we follow:
 1. &alpha;-conversion
 2. &beta;-reduction
+
+## &alpha;-conversion
+In our previous example, we had the lambda expression (&lambda;x.(&lambda;y. x y)). In this abstraction, 
+we say that *x* and *y* are bounded variables. Thus, we can change the names for boundeed variables 
+without modifying the logic of the expression. Formally, we say  
+
+&lambda;x. E[x] &rarr; &lambda;y. E[y]
+
+That is, we are replacing every apperence of x in E with y. We say that &lambda;x. E[x] and &lambda;y. E[y] 
+are alpha-equivalent since there underlying logic remains the same. Using our previous example, 
+
+(&lambda;x.(&lambda;y. x y)) &rarr; (&lambda;w.(&lambda;v. w v))
+
+## &beta;-reduction
+Another computation rule that we follow is called beta-reduction. The rule states that we will replace every 
+occurence of a bound variable in an abstraction with its respective argument. Formally we say,
+
+(&lambda;x. E<sub>1</sub>) E<sub>2</sub> &rarr; E<sub>1</sub>[x := E<sub>2</sub>]
+
+From our previous example, 
+
+(&lambda;x.&lambda;y. x y) p q &rarr; (&lambda;y. p y) q &rarr; p q
