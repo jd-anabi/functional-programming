@@ -39,5 +39,5 @@
 * [Recurrence relations](https://jd-anabi.github.io/functional-programming/recurrence-relations)
 
 ### Haskell Exercises
-* [Recursion Exercises](https://jd-anabi.github.io/functional-programming/basic-recursion-exercises)
-* [List Exercises](https://jd-anabi.github.io/functional-programming/basic-list-exercises)
+* [Recursion Exercises](https://jd-anabi.github.io/functional-programming/recursion-exercises)
+* [List Exercises](https://jd-anabi.github.io/functional-programming/list-exercises)
