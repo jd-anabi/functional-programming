@@ -15,12 +15,12 @@ E := x | &lambda;x. E<sub>1</sub> | E<sub>1</sub> E<sub>2</sub>
 
 What this means is that a lambda expression can either be a: 
 1. A variable (*x*)
-2. An abstraction (*&lambda;x.E<sub>1</sub>*, where *E<sub>1</sub>* is also a lambda expression)
-2. An application (*E<sub>1</sub> E<sub>2</sub>*, where *E<sub>1</sub>*, *E<sub>2</sub>* are also lambda expressions)
+2. An abstraction (&lambda;x.E<sub>1</sub>, where E<sub>1</sub> is also a lambda expression)
+2. An application (E<sub>1</sub> E<sub>2</sub>, where E<sub>1</sub>, E<sub>2</sub> are also lambda expressions)
 
-For example, *((&lambda;x.(&lambda;y. x y)) z)* is an expression that is an application between a variable *z* and 
-an abstraction *(&lambda;x.(&lambda;y. x y))*. We can drop the parentheses if there is no ambiguity in the expression. 
-Thus, we can write the previous lambda expression as *(&lambda;x.&lambda;y. x y) z* without any abiguity.
+For example, ((&lambda;x.(&lambda;y. x y)) z) is an expression that is an application between a variable *z* and 
+an abstraction (&lambda;x.(&lambda;y. x y)). We can drop the parentheses if there is no ambiguity in the expression. 
+Thus, we can write the previous lambda expression as (&lambda;x.&lambda;y. x y) z without any abiguity.
 
 # Rules
 When working with lambda expressions, there are two computation rules that we follow:
