@@ -48,12 +48,12 @@ if TRUE then p else q
 
 Let's use our beta-reduction rules to see how this is the case.
 
-(&lambda;x.&lambda;y.&lambda;z. x y z) (&lambda;x.&lambda;y. x) p q
-&rarr; (&lambda;y.&lambda;z. (&lambda;x.&lambda;y. x) y z)  p q
-&rarr; (&lambda;z. (&lambda;x.&lambda;y. x) p z) q
-&rarr; (&lambda;x.&lambda;y. x) p q
-&rarr; (&lambda;y. p) q
-&rarr; p
+(&lambda;x.&lambda;y.&lambda;z. x y z) (&lambda;x.&lambda;y. x) p q 
+&rarr; (&lambda;y.&lambda;z. (&lambda;x.&lambda;y. x) y z)  p q 
+&rarr; (&lambda;z. (&lambda;x.&lambda;y. x) p z) q 
+&rarr; (&lambda;x.&lambda;y. x) p q 
+&rarr; (&lambda;y. p) q 
+&rarr; p 
 
 As we can see, we take the **then** branch because our boolean expression in the **if** clause is TRUE. The 
 same can be done for the second statement.
