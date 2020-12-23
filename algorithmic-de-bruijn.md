@@ -28,33 +28,33 @@ deBruijn (EApp e1 e2) =
 Let's look at an example and see if this algorithm holds up.
 
 ```haskell
-deBruijn (((&lambda;x.&lambda;y. x y) p) (&lambda;z. z))
+deBruijn (((\x.\y. x y) p) (\z. z))
 
-= write (deBruijn (((&lambda;x.&lambda;y. x y) p)) ++ write (deBruijn (&lambda;z. z))
+= write (deBruijn (((\x.\y. x y) p)) ++ write (deBruijn (\z. z))
 
-= write (deBruijn ((&lambda;x.&lambda;y. x y)) ++ write (deBruijn (p)) ++ write (deBruijn (&lambda;z. z))
+= write (deBruijn ((\x.\y. x y)) ++ write (deBruijn (p)) ++ write (deBruijn (\z.. z))
 
-= '\' ++ deBruijn (&lambda;y. x y) ++ write (deBruijn (p)) ++ write (deBruijn (&lambda;z. z))
+= '\' ++ deBruijn (\y. x y) ++ write (deBruijn (p)) ++ write (deBruijn (\z. z))
 
-= '\' ++ '\' ++ deBruijn (x y) ++ write (deBruijn (p)) ++ write (deBruijn (&lambda;z. z))
+= '\' ++ '\' ++ deBruijn (x y) ++ write (deBruijn (p)) ++ write (deBruijn (\z. z))
 
-= '\' ++ '\' ++ write (deBruijn x) ++ write (deBruijn y) ++ write (deBruijn (p)) ++ write (deBruijn (&lambda;z. z))
+= '\' ++ '\' ++ write (deBruijn x) ++ write (deBruijn y) ++ write (deBruijn (p)) ++ write (deBruijn (\z. z))
 
-= '\' ++ '\' ++ write (2) ++ write (deBruijn y) ++ write (deBruijn (p)) ++ write (deBruijn (&lambda;z. z))
+= '\' ++ '\' ++ write (2) ++ write (deBruijn y) ++ write (deBruijn (p)) ++ write (deBruijn (\z. z))
 
-= '\' ++ '\' ++ '2' ++ write (deBruijn y) ++ write (deBruijn (p)) ++ write (deBruijn (&lambda;z. z))
+= '\' ++ '\' ++ '2' ++ write (deBruijn y) ++ write (deBruijn (p)) ++ write (deBruijn (\z. z))
 
-= '\' ++ '\' ++ '2' ++ write (1) ++ write (deBruijn (p)) ++ write (deBruijn (&lambda;z. z))
+= '\' ++ '\' ++ '2' ++ write (1) ++ write (deBruijn (p)) ++ write (deBruijn (\z. z))
 
-= '(\' ++ '\' ++ '2' ++ '1' ++ write (deBruijn (p)) ++ write (deBruijn (&lambda;z. z))
+= '(\' ++ '\' ++ '2' ++ '1' ++ write (deBruijn (p)) ++ write (deBruijn (\z. z))
 
-= '(\' ++ '\' ++ '2' ++ '1' ++ ')' ++ write (deBruijn (p)) ++ write (deBruijn (&lambda;z. z))
+= '(\' ++ '\' ++ '2' ++ '1' ++ ')' ++ write (deBruijn (p)) ++ write (deBruijn (\z. z))
 
-= '(\' ++ '\' ++ '2' ++ '1' ++ ')' ++ ')' ++ write (deBruijn (p)) ++ write (deBruijn (&lambda;z. z))
+= '(\' ++ '\' ++ '2' ++ '1' ++ ')' ++ ')' ++ write (deBruijn (p)) ++ write (deBruijn (\z. z))
 
-= '(\' ++ '\' ++ '2' ++ '1' ++ ')' ++ ')' ++ write (p) ++ write (deBruijn (&lambda;z. z))
+= '(\' ++ '\' ++ '2' ++ '1' ++ ')' ++ ')' ++ write (p) ++ write (deBruijn (\z. z))
 
-= '(\' ++ '\' ++ '2' ++ '1' ++ ')' ++ ')' ++ 'p' ++ write (deBruijn (&lambda;z. z))
+= '(\' ++ '\' ++ '2' ++ '1' ++ ')' ++ ')' ++ 'p' ++ write (deBruijn (\z. z))
 
 = '(\' ++ '\' ++ '2' ++ '1' ++ ')' ++ ')' ++ 'p' ++ '(\' ++ write (z)
 
