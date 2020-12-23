@@ -33,7 +33,9 @@ defined as follows.
 ## I
 **I** is the identity combinator such that 
 
-(**I** x) = x &forall; terms x
+(**I** x) = x 
+
+&forall; terms x
 
 ## K
 **K** is the constant combinator which creates constant functions. That is, (**K** x) is the function that 
