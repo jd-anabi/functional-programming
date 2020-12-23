@@ -58,4 +58,4 @@ If you would like to learn about sets, I recommend starting [here](https://hacka
 There are also many other modules that are useful such as [list](https://hackage.haskell.org/package/base-4.14.1.0/docs/Data-List.html) 
 and [maps](https://hackage.haskell.org/package/containers-0.6.2.1/docs/Data-Map.html). 
 
-Now that we have learned about modules, we can learn about [functors](https://jd-anabi.github.io/functional-programming/functors).
+Now that we have learned about modules, we can learn about [monads](https://jd-anabi.github.io/functional-programming/monads).
