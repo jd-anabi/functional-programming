@@ -10,7 +10,7 @@ this mixed index notation in Haskell.
 
 ```haskell
 deBruijn (EAbs x e) = 
-    write "\" -- use I/O monad
+    write '\' -- use I/O monad
     push x on the stack -- use state monad
     deBruijn (e)
     pop x off the stack
