@@ -38,9 +38,9 @@ IF-THEN-ELSE := &lambda;x.&lambda;y.&lambda;z. x y z
 This seems like a fairly standard abstraction with three binders, so how could this possibily give us our 
 desired logic? Well, let's combine it with our definitions of TRUE and FALSE
 
-(1) (&lambda;x.&lambda;y.&lambda;z. x y z) (&lambda;x.&lambda;y. x) p q
+1. (&lambda;x.&lambda;y.&lambda;z. x y z) (&lambda;x.&lambda;y. x) p q
 
-(2) (&lambda;x.&lambda;y.&lambda;z. x y z) (&lambda;x.&lambda;y. y) p q
+2. (&lambda;x.&lambda;y.&lambda;z. x y z) (&lambda;x.&lambda;y. y) p q
 
 Now, the first statement represents 
 ```haskell
