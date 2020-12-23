@@ -117,7 +117,9 @@ TRUE  | FALSE
 Thus, we define AND, OR, and NOT in lambda calculus as follows:
 
 AND := &lambda;x.&lambda;y. x y x
+
 OR := &lambda;x.&lambda;y. x x y
+
 NOT := &lambda;x. (&lambda;p.&lambda;q. q) (&lambda;p.&lambda;q. p) = &lambda;x. FALSE TRUE
 
 As an exercise, I would like you to verify the defintions of AND, OR, and NOT by using the truth tables above. 
