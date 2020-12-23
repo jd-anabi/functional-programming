@@ -54,7 +54,7 @@ s3 = Set.union s1 s2
 insert_function_example = Set.insert 2 s3
 ```
 
-If you would like to learn about sets, I recommend starting [here](https://hackage.haskell.org/package/containers-0.6.4.1/docs/Data-Set.html). 
+If you would like to learn more about sets, I recommend starting [here](https://hackage.haskell.org/package/containers-0.6.4.1/docs/Data-Set.html). 
 There are also many other modules that are useful such as [list](https://hackage.haskell.org/package/base-4.14.1.0/docs/Data-List.html) 
 and [maps](https://hackage.haskell.org/package/containers-0.6.2.1/docs/Data-Map.html). 
 
