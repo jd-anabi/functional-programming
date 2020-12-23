@@ -38,3 +38,7 @@
 ### Haskell Exercises
 * [Recursion Exercises](https://jd-anabi.github.io/functional-programming/recursion-exercises)
 * [List Exercises](https://jd-anabi.github.io/functional-programming/list-exercises)
+
+### Suggested Readings
+[A Structural Approach to Reversible Computing](https://arxiv.org/pdf/1111.7154.pdf) (uses combinatory logic)
+[Lambda Calculus Notation with Nameless Dummies: A Tool for Automatic Formula Manipulation, with Application to the Church-Rosser Theorem](https://alexandria.tue.nl/repository/freearticles/597619.pdf)(De Bruijn Indices)
