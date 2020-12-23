@@ -27,7 +27,7 @@
 * [Lambda Calculus Introduction](https://jd-anabi.github.io/functional-programming/lambda-calculus-intro)
 * [Conditionals in Lambda Calculus](https://jd-anabi.github.io/functional-programming/lambda-calculus-conditionals)
 * [De Bruijn Indices](https://jd-anabi.github.io/functional-programming/de-bruijn-indices)
-* [An Algorithmic Approach to Implementing De Bruijn Indices](https://jd-anabi.github.io/functional-programming/de-bruijn-indices-implementation)
+* [An Algorithmic Approach to Implementing De Bruijn Indices](https://jd-anabi.github.io/functional-programming/algorithmic-de-bruijn)
 
 #### Combinatory Logic
 * [Combinatory Logic](https://jd-anabi.github.io/functional-programming/combinatory-logic)
