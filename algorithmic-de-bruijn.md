@@ -27,7 +27,6 @@ deBruijn (EApp e1 e2) =
 
 Let's look at an example and see if this algorithm holds up.
 
-```haskell
 deBruijn (((\x.\y. x y) p) (\z. z))
 
 = write (deBruijn (((\x.\y. x y) p)) ++ write (deBruijn (\z. z))
@@ -65,6 +64,6 @@ deBruijn (((\x.\y. x y) p) (\z. z))
 = '(\' ++ '\' ++ '2' ++ '1' ++ ')' ++ ')' ++ 'p' ++ '(\' ++ '1' ++ ')'
 
 = '(\ \ 2 1) p 1'
-```
+
 Thus, this gives us the correct expression in mixed De Bruijn indices. However, lambda calculus isn't the only way to represent 
 computation. There is also [combinatory logic](https://jd-anabi.github.io/functional-programming/combinatory-logic).
