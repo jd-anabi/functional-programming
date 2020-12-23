@@ -88,3 +88,6 @@ If we use CBN, then this expression reduces to:
 
 However, if we evaluate it using CBV, then the program will not terminate, as it will continously be evaluating the argument, 
 ((&lambda;x. x x) (&lambda;x. x x)), which doesn't terminate as we showed before.
+
+Now that we hopefully have a solid understanding of the language and rules of lambda calculus, how can we actually apply this knowledge. 
+Well, one interesting thing (out of many things) we can do in lambda calculus is implement [conditionals](https://jd-anabi.github.io/functional-programming/conditionals).
