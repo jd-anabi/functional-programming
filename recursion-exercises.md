@@ -3,11 +3,11 @@
 # Subtraction
 Design a function that takes in two integers, *p* and *q*, and returns 
 the difference *p-q*. Assume that *p-q = 0* if *p &lt; q*. Also, assume 
-that *p, q &gte; 0*. For example, *subtr 2 5 = 0*.
+that *p, q &gt;= 0*. For example, *subtr 2 5 = 0*.
 
 ## Greater Than
 Using your subtraction function, create another function that takes 
-in two integers, *p* and *q* such that p, q &gte 0, and returns 
+in two integers, *p* and *q* such that p, q &gt;= 0, and returns 
 wheter *p* is strictly greater than *q*.
 
 # Logistic Map
