@@ -11,7 +11,7 @@ binded variables and substitution.
 
 Specifically, a lambda expression can be defined as follows:
 
-*E := x | &lambda;x. E<sub>1</sub> | E<sub>1</sub> E<sub>2</sub>* 
+E := x | &lambda;x. E<sub>1</sub> | E<sub>1</sub> E<sub>2</sub> 
 
 What this means is that a lambda expression can either be a: 
 1. A variable (*x*)
