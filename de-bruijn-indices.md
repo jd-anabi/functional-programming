@@ -13,7 +13,7 @@ are logically equivalent. For example, suppose we have two expressions:
 Now, it might not be immediately clear, but these two expressions are logically 
 equivalent. In De Bruijn indices, however, both these statements are:
 
-&lambda;&lambda;&lambda;&lambda; 1 4 1 3 4 2
+&lambda; &lambda; &lambda; &lambda; 1 4 1 3 4 2
 
 Thus, this notation is very handy for highlighting the logical equivalence of two expressions. 
 It might seem confusing right now, so don't worry. We will start covering the basics right now.
@@ -29,7 +29,7 @@ For example,
 
 becomes
 
-&lambda;&lambda; 2 1 2
+&lambda; &lambda; 2 1 2
 
 as the number of binders between x and its own binder is 2 (again, we are also considering x's binder itself). Similary, for y, 
 there is 1 binder. 
@@ -48,14 +48,14 @@ a number, making sure that the number is strictly greater than the highest bound
 
 becomes 
 
-(&lambda;&lambdal 2 1 3) 4 5
+(&lambda; &lambdal 2 1 3) 4 5
 
 As we can see, z, u, v are free variables, and thus remain strictly greater than bounded variables. 
 This discussion of indices, however, begs the following question: how do we perform beta-reduction? 
 The idea of beta-reduction fundamentally remains the same, however, this time, we must take care to decrement 
 our free variables accordingly. Let's consider our last example:
 
-(&lambda;&lambdal 2 1 3) 4 5
+(&lambda; &lambdal 2 1 3) 4 5
 
 &rarr; (&lambda; 4 1 3) 5
 
@@ -80,6 +80,6 @@ So for example, in the mixed notation our previous lambda expression
 
 becomes
 
-(&lambda;&lambda; 2 1 z) u v
+(&lambda; &lambda; 2 1 z) u v
 
 Now that we are familar with De Bruijn indices, let's describe an [algorithmic approach for implementing this mixed notation](https://jd-anabi.github.io/functional-programming/algorithmic-de-bruijn).
