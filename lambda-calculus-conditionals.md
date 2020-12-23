@@ -76,7 +76,7 @@ same can be done for the second statement.
 
 &rarr; q
 
-The beauty of lambda calculus however is that we don't have to stop here. We can even define lambda expressions 
+The beauty of lambda calculus, however, is that we don't have to stop here. We can even define lambda expressions 
 for AND, OR, and NOT.
 
 # AND, OR, NOT
