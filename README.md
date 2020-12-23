@@ -19,7 +19,7 @@
 * [Modules](https://jd-anabi.github.io/functional-programming/modules)
 
 #### Advanced Haskell
-* [Monads I](https://jd-anabi.github.io/functional-programming/monads)
+* [Monads](https://jd-anabi.github.io/functional-programming/monads)
 * [Lambda Calculus](https://jd-anabi.github.io/functional-programming/lambda-calculus-haskell)
 
 ### Theory
