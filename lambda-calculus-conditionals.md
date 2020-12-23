@@ -85,6 +85,7 @@ If you are unfamilar with AND, OR, and NOT, that is ok.
 AND, OR, and NOT are operators with the following truth tables (we will be dealing with AND2 and OR2 for simplicity): 
 
 ## AND
+
 Input 1 | Input 2 | Output
 
 FALSE | FALSE | FALSE
@@ -96,6 +97,7 @@ TRUE | FALSE | FALSE
 TRUE | TRUE | TRUE
 
 ## OR
+
 Input 1 | Input 2 | Output
 
 FALSE | FALSE | FALSE
@@ -107,7 +109,8 @@ TRUE | FALSE | TRUE
 TRUE | TRUE | TRUE
 
 
-## NOT 
+## NOT
+
 Input | Output
 
 FALSE | TRUE
@@ -122,5 +125,5 @@ OR := &lambda;x.&lambda;y. x x y
 
 NOT := &lambda;x. (&lambda;p.&lambda;q. q) (&lambda;p.&lambda;q. p) = &lambda;x. FALSE TRUE
 
-As an exercise, I would like you to verify these defintions of AND, OR, and NOT by using the truth tables above. 
-Once you have done that, we can begin learning about [De Bruijn indices](https://jd-anabi.github.io/functional-programming/de-bruijn-indices).
+As an exercise, I would like you to verify these defintions of AND, OR, and NOT by using the truth tables above in addition to the defintions 
+of TRUE and FALSE. Once you have done that, we can begin learning about [De Bruijn indices](https://jd-anabi.github.io/functional-programming/de-bruijn-indices).
