@@ -70,4 +70,4 @@ Now, you might be thinking that this seems pretty complicated. The thing is, you
 known for being very confusing, but luckily many [tutorials](https://wiki.haskell.org/Monad_tutorials_timeline) have 
 been done covering them in more depth. If you would like to learn even more about them, there are plently of 
 [research papers](https://wiki.haskell.org/Research_papers/Monads_and_arrows) written about them. If you want to continue, 
-we will now move on to the more theoretical sides of things, starting with [lambda calculus](https://jd-anabi.github.io/functional-programming/lambda--calculus).
+we will now move on to the more theoretical sides of things, starting with [lambda calculus](https://jd-anabi.github.io/functional-programming/lambda--calculus-intro).
