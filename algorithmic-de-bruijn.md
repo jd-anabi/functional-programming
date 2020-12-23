@@ -67,4 +67,4 @@ deBruijn (((\x.\y. x y) p) (\z. z))
 = '(\ \ 2 1) p 1'
 ```
 Thus, this gives us the correct expression in mixed De Bruijn indices. However, lambda calculus isn't the only way to represent 
-computation. There is also [combinatory logic](https://jd-anabi.github.io/functional-programming/).
+computation. There is also [combinatory logic](https://jd-anabi.github.io/functional-programming/combinatory-logic).
