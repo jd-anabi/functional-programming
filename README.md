@@ -21,7 +21,6 @@
 #### Advanced Haskell
 * [Functors](https://jd-anabi.github.io/functional-programming/functors)
 * [Monads](https://jd-anabi.github.io/functional-programming/monads)
-* [Lambda Calculus](https://jd-anabi.github.io/functional-programming/lambda-calculus-haskell)
 
 ### Theory
 #### Lambda Calculus
