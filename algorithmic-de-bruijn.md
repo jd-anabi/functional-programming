@@ -6,7 +6,7 @@ attention on mixed indices, and outline a algorithmic draft of implementing them
 
 # Outline of Algorithm
 The following (pseudo-) code represents a rough outline on how to go about implementing 
-this mixed index notation in Haskell.
+this mixed index notation in Haskell [NOTE: We are using \ to represent &lambda;].
 
 ```haskell
 deBruijn (EAbs x e) = 
