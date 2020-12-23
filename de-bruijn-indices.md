@@ -55,7 +55,7 @@ This discussion of indices, however, begs the following question: how do we perf
 The idea of beta-reduction fundamentally remains the same, however, this time, we must take care to decrement 
 our free variables accordingly. Let's consider our last example:
 
-(&lambda; &lambdal 2 1 3) 4 5
+(&lambda; &lambda 2 1 3) 4 5
 
 &rarr; (&lambda; 4 1 3) 5
 
