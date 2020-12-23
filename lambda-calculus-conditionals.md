@@ -87,24 +87,24 @@ AND, OR, and NOT are operators with the following truth tables (we will be deali
 ## AND
 Input 1 | Input 2 | Output
 
-FALSE   |  FALSE  | FALSE
+FALSE | FALSE | FALSE
 
-FALSE   |  TRUE   | FALSE
+FALSE | TRUE | FALSE
 
-TRUE    |  FALSE  | FALSE
+TRUE | FALSE | FALSE
 
-TRUE    |  TRUE   | TRUE
+TRUE | TRUE | TRUE
 
 ## OR
 Input 1 | Input 2 | Output
 
-FALSE   |  FALSE  | FALSE
+FALSE | FALSE | FALSE
 
-FALSE   |  TRUE   | TRUE
+FALSE | TRUE | TRUE
 
-TRUE    |  FALSE  | TRUE
+TRUE | FALSE | TRUE
 
-TRUE    |  TRUE   | TRUE
+TRUE | TRUE | TRUE
 
 
 ## NOT 
@@ -112,7 +112,7 @@ Input | Output
 
 FALSE | TRUE
 
-TRUE  | FALSE
+TRUE | FALSE
 
 Thus, we define AND, OR, and NOT in lambda calculus as follows:
 
