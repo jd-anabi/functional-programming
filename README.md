@@ -19,7 +19,6 @@
 * [Modules](https://jd-anabi.github.io/functional-programming/modules)
 
 #### Advanced Haskell
-* [Functors](https://jd-anabi.github.io/functional-programming/functors)
 * [Monads](https://jd-anabi.github.io/functional-programming/monads)
 
 ### Theory
