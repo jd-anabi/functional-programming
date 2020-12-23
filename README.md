@@ -31,6 +31,9 @@
 #### Combinatory Logic
 * [Combinatory Logic](https://jd-anabi.github.io/functional-programming/combinatory-logic)
 
+## Project
+* [Extending our Calculator](https://jd-anabi.github.io/functional-programming/calculator)
+
 ## Supplementary
 ### Mathematics
 * [Recurrence relations](https://jd-anabi.github.io/functional-programming/recurrence-relations)
