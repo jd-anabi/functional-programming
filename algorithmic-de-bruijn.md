@@ -22,48 +22,48 @@ deBruijn (EVar x) =
     else write x
 
 deBruijn (EApp e1 e2) = 
-    write (deBruijn e1) ++ write (deBruijn e2)
+    write (deBruijn e1) +++ write (deBruijn e2)
 ```
 
 Let's look at an example and see if this algorithm holds up.
 
 deBruijn (((\x.\y. x y) p) (\z. z))
 
-= write (deBruijn (((\x.\y. x y) p)) ++ write (deBruijn (\z. z))
+= write (deBruijn (((\x.\y. x y) p)) +++ write (deBruijn (\z. z))
 
-= write (deBruijn ((\x.\y. x y)) ++ write (deBruijn (p)) ++ write (deBruijn (\z.. z))
+= write (deBruijn ((\x.\y. x y)) +++ write (deBruijn (p)) +++ write (deBruijn (\z.. z))
 
-= '\' ++ deBruijn (\y. x y) ++ write (deBruijn (p)) ++ write (deBruijn (\z. z))
+= '\' +++ deBruijn (\y. x y) +++ write (deBruijn (p)) +++ write (deBruijn (\z. z))
 
-= '\' ++ '\' ++ deBruijn (x y) ++ write (deBruijn (p)) ++ write (deBruijn (\z. z))
+= '\' +++ '\' +++ deBruijn (x y) +++ write (deBruijn (p)) +++ write (deBruijn (\z. z))
 
-= '\' ++ '\' ++ write (deBruijn x) ++ write (deBruijn y) ++ write (deBruijn (p)) ++ write (deBruijn (\z. z))
+= '\' +++ '\' +++ write (deBruijn x) +++ write (deBruijn y) +++ write (deBruijn (p)) ++ write (deBruijn (\z. z))
 
-= '\' ++ '\' ++ write (2) ++ write (deBruijn y) ++ write (deBruijn (p)) ++ write (deBruijn (\z. z))
+= '\' +++ '\' +++ write (2) +++ write (deBruijn y) +++ write (deBruijn (p)) +++ write (deBruijn (\z. z))
 
-= '\' ++ '\' ++ '2' ++ write (deBruijn y) ++ write (deBruijn (p)) ++ write (deBruijn (\z. z))
+= '\' +++ '\' +++ '2' +++ write (deBruijn y) +++ write (deBruijn (p)) +++ write (deBruijn (\z. z))
 
-= '\' ++ '\' ++ '2' ++ write (1) ++ write (deBruijn (p)) ++ write (deBruijn (\z. z))
+= '\' +++ '\' +++ '2' +++ write (1) +++ write (deBruijn (p)) +++ write (deBruijn (\z. z))
 
-= '(\' ++ '\' ++ '2' ++ '1' ++ write (deBruijn (p)) ++ write (deBruijn (\z. z))
+= '(\' +++ '\' +++ '2' +++ '1' +++ write (deBruijn (p)) +++ write (deBruijn (\z. z))
 
-= '(\' ++ '\' ++ '2' ++ '1' ++ ')' ++ write (deBruijn (p)) ++ write (deBruijn (\z. z))
+= '(\' +++ '\' +++ '2' +++ '1' +++ ')' +++ write (deBruijn (p)) +++ write (deBruijn (\z. z))
 
-= '(\' ++ '\' ++ '2' ++ '1' ++ ')' ++ ')' ++ write (deBruijn (p)) ++ write (deBruijn (\z. z))
+= '(\' +++ '\' +++ '2' +++ '1' +++ ')' +++ ')' +++ write (deBruijn (p)) +++ write (deBruijn (\z. z))
 
-= '(\' ++ '\' ++ '2' ++ '1' ++ ')' ++ ')' ++ write (p) ++ write (deBruijn (\z. z))
+= '(\' +++ '\' +++ '2' +++ '1' +++ ')' +++ ')' +++ write (p) +++ write (deBruijn (\z. z))
 
-= '(\' ++ '\' ++ '2' ++ '1' ++ ')' ++ ')' ++ 'p' ++ write (deBruijn (\z. z))
+= '(\' +++ '\' +++ '2' +++ '1' +++ ')' +++ ')' +++ 'p' +++ write (deBruijn (\z. z))
 
-= '(\' ++ '\' ++ '2' ++ '1' ++ ')' ++ ')' ++ 'p' ++ '(\' ++ write (z)
+= '(\' +++ '\' +++ '2' +++ '1' +++ ')' +++ ')' +++ 'p' +++ '(\' +++ write (z)
 
-= '(\' ++ '\' ++ '2' ++ '1' ++ ')' ++ ')' ++ 'p' ++ '(\' ++ write (1)
+= '(\' +++ '\' +++ '2' +++ '1' +++ ')' +++ ')' +++ 'p' +++ '(\' +++ write (1)
 
-= '(\' ++ '\' ++ '2' ++ '1' ++ ')' ++ ')' ++ 'p' ++ '(\' ++ '1'
+= '(\' +++ '\' +++ '2' +++ '1' +++ ')' +++ ')' +++ 'p'+++++ '(\' +++ '1'
 
-= '(\' ++ '\' ++ '2' ++ '1' ++ ')' ++ ')' ++ 'p' ++ '(\' ++ '1' ++ ')'
+= '(\' +++ '\' +++ '2' +++ '1' +++ ')' +++ ')' +++ 'p' +++ '(\' +++ '1' +++ ')'
 
-= '(\ \ 2 1) p 1'
+= '(\ \ 2 1) p (\ 1)'
 
 Thus, this gives us the correct expression in mixed De Bruijn indices. However, lambda calculus isn't the only way to represent 
 computation. There is also [combinatory logic](https://jd-anabi.github.io/functional-programming/combinatory-logic).
