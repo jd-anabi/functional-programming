@@ -4,6 +4,6 @@ In most programming languages, the use of conditionals is very common. For examp
 if we want to choose the smaller number of two numbers, we write the following 
 (pseudo-) code:
 
-```python
+```haskell
 if x < y then x else y
 ```
